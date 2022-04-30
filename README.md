@@ -1,0 +1,2 @@
+# Outsystems_CNYNOT_Manifest
+ManifestPluginForCNYNOTIFIER

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+xmlns:rim="http://www.blackberry.com/ns/widgets"
+xmlns:android="http://schemas.android.com/apk/res/android"
+           id="cordova-plugin-geolocation"
+      version="4.0.1"
+
+    <name>CNYNOTIFER_MAIN</name>
+    <description> xml addon for app </description>
+
+    <repo>https://git-wip-us.apache.org/repos/asf/cordova-plugin-geolocation.git</repo>
+    <issue>https://issues.apache.org/jira/browse/CB/component/12320638</issue>
+
+    <engines>
+        <engine name="cordova-android" version=">=6.3.0" />
+    </engines>
+     <!-- android -->
+      <platform name="android">
+
+          <config-file target="AndroidManifest.xml" parent="/*">
+              <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" android:required="True" android:exported="True" />
+              <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" android:required="True" android:exported="True"/>
+              <uses-feature android:name="android.hardware.location.gps" />
+
+          </config-file>
+
+      </platform>
+</plugin>
